@@ -1,0 +1,18 @@
+<%- include ('partials/header.ejs') -%>
+<body>
+  <h1>Opinions</h1>
+  <div class="posts-container">
+    <% postArr.forEach((post)=>{ %>
+    <section>
+      <header>
+        <h2><%= post.title %></h2>
+      </header>
+      <div class="p-box">
+        <p class="content"><%= post.content.substring(0, 100) %>...</p>
+        <a class="read-more" href="/posts/<%=post._id%>">continue reading</a>
+      </div>
+    </section>
+    <% }) %>
+  </div>
+</body>
+<%- include('partials/footer.ejs')-%>

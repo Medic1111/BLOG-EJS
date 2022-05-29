@@ -1,0 +1,252 @@
+/* UNIVERSAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  height: inherit;
+  width: inherit;
+  background-color: rgb(247, 244, 245);
+  /* background-color: rgb(58, 13, 29); */
+}
+/* NAV (located at header.ejs) */
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: #eceaea;
+  background-color: rgb(231, 227, 228);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 5vw;
+}
+ul {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  list-style: none;
+}
+.logo {
+  font-size: 2.2em;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: rgb(218, 69, 94);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link {
+  font-size: 1.8em;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: rgb(218, 117, 133);
+  color: rgb(121, 25, 41);
+}
+
+/* H1 TITLE PAGE */
+
+h1 {
+  font-size: 4em;
+  padding: 5vh 5vw;
+  color: rgb(105, 78, 82);
+  color: rgb(121, 25, 41);
+}
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+small {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: rgb(218, 69, 94);
+}
+/* FORM (COMPOSE PAGE) */
+
+main {
+  border-radius: 5px;
+  width: 90vw;
+  margin-left: 5vw;
+  height: auto;
+  padding: 5vh 5vw;
+  background-color: rgba(231, 227, 228, 0.438);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+label {
+  align-self: center;
+  font-size: 2em;
+  color: rgb(218, 69, 94);
+}
+.title {
+  height: 5vh;
+  width: 60vw;
+  font-size: 2.2em;
+  padding-left: 1em;
+  border: transparent;
+  border-radius: 5px;
+}
+.text {
+  width: 60vw;
+  padding: 1em;
+  font-size: 2em;
+  border: transparent;
+  border-radius: 5px;
+}
+button {
+  width: 60vw;
+  height: 5vh;
+  background-color: rgb(218, 69, 94);
+  border: transparent;
+  border-radius: 5px;
+  color: #eceaea;
+  font-size: 1.5em;
+}
+
+/* HOME PAGE ROOT */
+
+.posts-container {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+section {
+  width: 91vw;
+  margin-left: 4.5vw;
+  background-color: rgb(223, 200, 204);
+  background-color: rgb(238, 218, 221);
+  background-color: rgb(240, 230, 231);
+  background-color: rgb(243, 237, 239);
+
+  height: 17vh;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+}
+header {
+  background-color: rgb(211, 66, 90);
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+h2 {
+  padding-left: 0.5vw;
+  font-size: 2em;
+  color: rgb(245, 227, 229);
+  letter-spacing: 1.1px;
+}
+.content {
+  letter-spacing: 1px;
+  padding: 1vh 0.5vw;
+  font-size: 1.8em;
+  color: rgb(105, 78, 82);
+  color: rgb(70, 26, 33);
+  width: 80%;
+}
+.p-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+}
+.read-more {
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: rgb(218, 69, 94);
+  padding: 0.5vh 1vw;
+  color: rgb(177, 25, 48);
+}
+
+/* REMOVAL */
+
+.p-box-removal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: inherit;
+}
+
+.section-removal {
+  width: 91vw;
+  margin-left: 4.5vw;
+  background-color: rgb(240, 230, 231);
+  height: 60vh;
+  border-radius: 5px;
+  margin-bottom: 5vh;
+  background-color: rgb(243, 237, 239);
+}
+
+.button-removal {
+  width: 20vw;
+  height: 5vh;
+  background-color: rgb(145, 110, 117);
+  border: transparent;
+  border-radius: 5px;
+  color: #eceaea;
+  font-size: 1.5em;
+}
+.button-removal:hover {
+  background-color: rgb(117, 13, 34);
+  cursor: pointer;
+}
+.p-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  padding: 2vh 0vw;
+}
+/* DYNAMIC SINGLE POST PAGE */
+
+.dynamic-sec {
+  height: auto;
+  background-color: rgb(240, 230, 231);
+}
+.content-box {
+  overflow-y: scroll;
+}
+.dynamic-content {
+  padding: 1vh 0.5vw;
+  font-size: 1.8em;
+  color: rgb(59, 22, 27);
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+@media (max-width: 798px) {
+  html {
+    font-size: 53.5%;
+  }
+  ul {
+    width: 45%;
+    gap: 1em;
+  }
+}
