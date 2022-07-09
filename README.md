@@ -1,5 +1,9 @@
 # PROJECT: PERSONAL BLOG
 
+[LIVE HERE](https://medic1111-blog.herokuapp.com/)
+
+![Image of home page](./public/screen.png)
+
 ## TECHNOLOGIES/TOOLS:
 
 - NodeJS
